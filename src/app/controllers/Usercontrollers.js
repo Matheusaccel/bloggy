@@ -1,10 +1,6 @@
 import { json, response } from 'express'
 import User from '../models/User'
 import user from '../models/Post'
-import User from '../models/user'
-import bcrypt from 'bcrypt'
-import jwt from 'jsonwebtoken'
-import { JsonWebTokenError } from 'jsonwebtoken'
 
 class Usercontroller {
     async store(request, response){
