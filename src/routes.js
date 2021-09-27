@@ -1,4 +1,5 @@
 import express from 'express'
+import PostController from './app/controllers/PostController'
 import UserController from './app/controllers/UserController'
 import SessinController from './app/controllers/SessionController'
 import authMiddlewares from './app/middlewares/authentication'
@@ -10,6 +11,7 @@ routes.post('/auth', SessinController.store)
 
 
 routes.post(authMiddlewares)
+
 
 routes.use('/users',UserController.update)
 routes.delete('/users',UserController.delete)
